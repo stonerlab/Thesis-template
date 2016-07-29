@@ -29,18 +29,25 @@
    \LoadClass[pdftex, a4paper]{book}
 \fi
 
+%\usepackage[pagebackref=true]{hyperref} %define hyperref package last
+%\hypersetup{bookmarksopen=true, 
+%colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue,
+%%bookmarksopenlevel=2 %bookmarks pane opens to level 2
+%pdfstartview={FitH}}    
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphics}
 \usepackage{fancyhdr}
 \usepackage{eucal}
-\usepackage[english]{babel}
+\usepackage[UKenglish]{babel}
 \usepackage[usenames, dvipsnames]{color}
 \usepackage[perpage]{footmisc}
 %\usepackage[square, sort, numbers, authoryear,sort&compress]{natbib}
 \usepackage{ifthen}
 \usepackage{ifpdf}
 \usepackage{subfigure}
+
 
 
 
