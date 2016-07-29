@@ -35,11 +35,25 @@
 %%bookmarksopenlevel=2 %bookmarks pane opens to level 2
 %pdfstartview={FitH}}    
 
+
+\usepackage{textcomp} %solves \texteuro problem in bib
+%\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{lmodern} %font
+
+%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{graphics}
+\usepackage{amsfonts}
+
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pdftex]{graphicx}
+
+
 \usepackage{fancyhdr}
 \usepackage{eucal}
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[UKenglish]{babel}
 \usepackage[usenames, dvipsnames]{color}
 \usepackage[perpage]{footmisc}
@@ -48,6 +62,17 @@
 \usepackage{ifpdf}
 \usepackage{subfigure}
 
+%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color}
+\usepackage{upgreek} %upright greek letters
+\usepackage{physics}
+\usepackage[square,comma,sort&compress]{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+\renewcommand{\UrlFont}{\small\tt}
+\usepackage[nodayofweek]{datetime}
+\newdateformat{monthdate}{\monthname[\THEMONTH], \THEYEAR}
+\newdateformat{yeardate}{ \THEYEAR}
 
 
 
@@ -476,4 +501,7 @@
 {\setcounter{page}{1}
   \renewcommand{\thepage}{\roman{page}}}
 {\newpage\renewcommand{\thepage}{\arabic{page}}\setcounter{page}{1}}
+
+\hbadness=10000  %when to report badness errors
+\hfuzz=50pt  %when to report overfull error
 

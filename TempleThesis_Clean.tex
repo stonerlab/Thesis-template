@@ -1,64 +1,49 @@
 \include{Macros/MacroFile1}
 
 \documentclass[oneside,11pt]{Classes/myThesis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% file path for figures - add extra chapters as necessary %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{./Chapters/Chapter_1/Chapter_1_Fig/}     
+              {./Chapters/Chapter_2/Chapter_2_Fig/}
+              {./Chapters/Chapter_3/Chapter_3_Fig/}
+              {./ThesisFigs/}}
 
-\pdfinfo { /Title  (Title)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Constants - fill these in for use throughout the thesis %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\theAuthor}{Your Full name}
+\newcommand{\authorEmail}{physpqr@leeds.ac.uk}
+\newcommand{\myTitle}{My Thesis Title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pdfinfo { /Title  (\myTitle)
            /Creator (TeX)
            /Producer (pdfTeX)
-           /Author (Name Email)
-           /CreationDate (D:)  %format D:YYYYMMDDhhmmss
-           /Subject (My PhD)
+           /Author (\theAuthor \authorEmail)
+           /ModDate (D:\pdfdate)
+           /CreationDate (D:\pdfdate)  %format D:YYYYMMDDhhmmss
+           /Subject (Condensed Matter Physics)
            /Keywords (PhD, Thesis)}    
 		\pdfcatalog { /PageMode (/UseOutlines)
                   /OpenAction (fitbh)  }
 
-\title{Title}
-
-\author{\href{mailto:Email}{Full Name}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Title Page Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\myTitle}
+\author{\href{mailto:\authorEmail}{\theAuthor}}
 \crest{\includegraphics[width=35mm]{Leeds_Crest.png}}
 \collegeordept{\href{http://physics.leeds.ac.uk}{School of Physics and Astronomy}}
 \university{\href{http://www.leeds.ac.uk}{University of Leeds}}
 
 \degree{Doctor of Philosophy}
-\degreedate{December 2014}
+\degreedate{\monthdate\today}
 
-\hbadness=10000  %when to report badness errors
-\hfuzz=50pt  %when to report overfull error
-
-%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{textcomp} %solves \texteuro problem in bib
-%\usepackage[T1]{fontenc}
-\usepackage[ansinew]{inputenc}
-\usepackage{lmodern} %font
-
-%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[pdftex]{graphicx}
-%\pdfcompresslevel=9
-\graphicspath{{./Chapters/Chapter_1/Chapter_1_Fig/}     %% file path for figures - add extra chapters as necessarry
-              {./Chapters/Chapter_2/Chapter_2_Fig/}
-              {./Chapters/Chapter_3/Chapter_3_Fig/}
-%              {./Chapters/Chapter_4/Chapter_4_Fig/}
-%              {./Chapters/Chapter_5/Chapter_5_Fig/}
- %            {./Chapters/Chapter_6/Chapter_6_Fig/}
-              {./ThesisFigs/}}%Different font in captions
-\usepackage{caption}
-\captionsetup[figure]{labelfont=bf,font=small}
-\captionsetup[table]{labelfont=bf,font=small}
-
-%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-
-%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{color}
-\usepackage{upgreek} %upright greek letters
-\usepackage{physics}
-\usepackage[square,comma,sort&compress]{natbib}
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage{url}
-\renewcommand{\UrlFont}{\small\tt}
-           
+%Different font in captions
+%Different font in caption
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Optional Packages  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{StyleFiles/watermark}
 %\usepackage{xspace}  %add a space after maths if not already there
 %\usepackage{booktabs} %better tables
@@ -67,22 +52,11 @@
 %\usepackage{ctable} %include a figure command
 %\usepackage{footnote}
 %\usepackage{multirow} %for merging cells on tables
-
-
-%	CUSTOM STUFF	29/05/2012
-
-%% We will completely define our own header strings, so switch the fancy
-%% headers on, but nuke all the default values. (Note that this package
-%% *has* to load after the geometry package!)
-
 %\usepackage{times} % The "Times" font
 %\usepackage{Utopia} % The "Utopia" font
 
-% END CUSTOM STUFF
-
-%\includeonly{Abstract/abstract,Chapters/1_Introduction/IntroChapter,Chapters/2_Theory/Theory_Chapter}
-
 \linespread{1.3} %1.5 line spacing
+
 \begin{document}
 %\baselineskip=18pt plus1pt
 
@@ -92,6 +66,9 @@
 \setcounter{tocdepth}{2}
 \pagenumbering{roman}
 \frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Include sections are required, or comment out to skip over %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\include{Dedication/dedication}
 \include{IPStatement/ipstatement}
 \include{Acknowledgement/acknowledgement}
@@ -120,6 +97,4 @@
 \bibliographystyle{thesis} % bibliography style
 \renewcommand{\bibname}{References} 
 \bibliography{References/library} % References file
-
-
 \end{document}
