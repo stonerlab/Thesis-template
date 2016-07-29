@@ -333,9 +333,9 @@
 {\large \vspace*{20mm} {{\@crest} \par} \vspace*{20mm}}
     {{\Large \@author} \par}
 {\large \vspace*{1ex}
-    {{\@collegeordept} \par}
-\vspace*{1ex}
     {{\@university} \par}
+\vspace*{1ex}
+    {{\@collegeordept} \par}
 \vspace*{20mm}
     {{\submittedtext} \par}
 \vspace*{1ex}
