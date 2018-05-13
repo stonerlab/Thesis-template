@@ -287,6 +287,11 @@
 \def\university#1{\gdef\@university{#1}}
 % Defining the crest
 \def\crest#1{\gdef\@crest{#1}}
+% Defining the logo
+\def\logo#1{\gdef\@logo{#1}}
+% Defining the departmental logo
+\def\deptlogo#1{\gdef\@deptlogo{#1}}
+
 
 % These macros define an environment for front matter that is always 
 % single column even in a double-column document.
@@ -328,6 +333,12 @@
     \renewcommand{\footnoterule}{\relax}
     \thispagestyle{empty}
 %  \null\vfill
+\begin{picture}({50,25})
+\put(-75,75){\hbox{\@deptlogo}}
+\end{picture}
+\begin{picture}({50,25})
+\put(210,75){\hbox{\@logo}}
+\end{picture}
   \begin{center}
     { \Huge {\bfseries {\@title}} \par}
 {\large \vspace*{20mm} {{\@crest} \par} \vspace*{20mm}}
