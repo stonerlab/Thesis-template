@@ -279,7 +279,7 @@
   
 % END CUSTOM
 
-\newcommand{\submittedtext}{{Final Year Project Report}}
+\newcommand{\submittedtext}{{Submitted in accordance with the requirements for transfer to the degree of}}
 %
 %
 % DECLARATIONS
@@ -358,7 +358,9 @@
 \vspace*{1ex}
     {{\@collegeordept} \par}
 \vspace*{20mm}
-    {{\@degree \submittedtext} \par}
+    {{\submittedtext} \par}
+\vspace*{1ex}
+    {\it {\@degree} \par}
 \vspace*{2ex}
     {\@degreedate}}
   \end{center}
