@@ -126,7 +126,7 @@
                  hyperfigures
                  ]{hyperref} 
 
-    \DeclareGraphicsExtensions{.png, .jpg, .pdf}
+    \DeclareGraphicsExtensions{.png, .jpg, .pdf, .jpeg}
     \usepackage[pdftex]{graphicx}
     \pdfcompresslevel=9
     \graphicspath{{ThesisFigs/PNG/}{ThesisFigs/PDF/}{ThesisFigs/}}
@@ -241,35 +241,45 @@
   }}
 %  
 %	CHAPTER HEADER
-\newcommand{\gargantuan}{\fontsize{45}{50}\selectfont}
-\newcommand{\Megarule}{\rule{\linewidth}{0.5mm}}
-
+%\newcommand{\gargantuan}{\fontsize{45}{50}\selectfont}
+%\newcommand{\Megarule}{\rule{\linewidth}{0.5mm}}
+%
+%\renewcommand{\@makechapterhead}[1]{%
+%  \vspace*{0\p@}%
+%  {\parindent \z@ \raggedright \reset@font
+%%    \hrule                                    % horizontal line
+%		\rule{\textwidth}{0.5mm}
+%    \vspace{5pt}%                                 % add vertical space
+%    \ifnum \c@secnumdepth >\m@ne
+%        \gargantuan {\scshape\@chapapp\space \thechapter} % Chapter number
+%        \par\nobreak
+%        \vskip 20\p@
+%    \fi
+%    
+%    \interlinepenalty\@M
+%    \vspace{5pt}%                                 % add vertical space
+%    \hrule                                   % horizontal rule
+%    \rule{\textwidth}{0.5mm} \\
+%    \vspace{40pt}
+%    \huge #1\par                         % chapter title
+%    \nobreak
+%    \vskip 40\p@
+%    \newpage
+%  }}
 \renewcommand{\@makechapterhead}[1]{%
-  \vspace*{0\p@}%
-  {\parindent \z@ \raggedright \reset@font
-%    \hrule                                    % horizontal line
-		\rule{\textwidth}{0.5mm}
-    \vspace{5pt}%                                 % add vertical space
+\begin{center}
+{\huge
     \ifnum \c@secnumdepth >\m@ne
-        \gargantuan {\scshape\@chapapp\space \thechapter} % Chapter number
-        \par\nobreak
-        \vskip 20\p@
+        \@chapapp\space \thechapter} % Chapter number
     \fi
-    
-    \interlinepenalty\@M
-    \vspace{5pt}%                                 % add vertical space
-    \hrule                                   % horizontal rule
-    \rule{\textwidth}{0.5mm} \\
-    \vspace{40pt}
-    \huge #1\par                         % chapter title
-    \nobreak
-    \vskip 40\p@
-    \newpage
-  }}
+{\huge : #1\par}
+\vskip 0.5em
+\end{center}
+}
   
 % END CUSTOM
 
-\newcommand{\submittedtext}{{Submitted in accordance with the requirements for the degree of}}
+\newcommand{\submittedtext}{{Final Year Project Report}}
 %
 %
 % DECLARATIONS
@@ -348,9 +358,7 @@
 \vspace*{1ex}
     {{\@collegeordept} \par}
 \vspace*{20mm}
-    {{\submittedtext} \par}
-\vspace*{1ex}
-    {\it {\@degree} \par}
+    {{\@degree \submittedtext} \par}
 \vspace*{2ex}
     {\@degreedate}}
   \end{center}
@@ -417,7 +425,7 @@
 \begin{alwayssingle}
 \begin{center}
 \vspace*{1.5cm}
-{\Large \bfseries Intellectual Property Statement}
+{\Large \bfseries Declaration of Academic Integrity}
 \end{center}
 \vspace{0.5cm}
 \begin{quote}}
