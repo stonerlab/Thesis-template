@@ -4,14 +4,15 @@ University of Leeds
 Condensed Matter Physics Group Thesis LaTeX Template
 ====================================================
 
-This repository contains a LaTeX template for creating PhD theses at the University of leeds. It is maintained by members of the Condensed Matter Physics Group.
+This repository contains LaTeX templates for creating MPhys Reports. Transfer Reports and PhD theses at the University of leeds. It is maintained by members of the Condensed Matter Physics Group.
 
 Instructions
 ------------
 
 1. Select the branch that most closely matches your degree/report
 
-2. Download the .zip archive, clone or fork this repository.
+2. Download the .zip archive, clone or fork this repository. IF you fork the repository then you could use github to keep a copy of your thesis
+   with backups and full revision control - albeit at the expense of being a little bit public in your writing!
 
 3. Fill in the .tex files in the various sub-directories with your content.
 
