@@ -515,4 +515,3 @@
 
 \hbadness=10000  %when to report badness errors
 \hfuzz=50pt  %when to report overfull error
-
