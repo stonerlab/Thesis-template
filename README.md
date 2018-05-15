@@ -9,14 +9,19 @@ This repository contains a LaTeX template for creating PhD theses at the Univers
 Instructions
 ------------
 
-Download the .zip archive, clone or fork this repository.
+#. Select the branch that most closely matches your degree/report
 
-Fill in the .tex files in the various sub-directories with your content.
+#. Download the .zip archive, clone or fork this repository.
 
-Add figure files for your thesis to the Capter_#_Fig folders
+#. Fill in the .tex files in the various sub-directories with your content.
 
-Replace library.bib file with your BibTeX library file
+#. Add figure files for your thesis to the Capter_#_Fig folders. We recommend that you use pdflatex to compile the thesis and use eps2pdf to convert
+   your figures to pdf on the fly.
 
-Compile
+#. Replace library.bib file with your BibTeX library file
 
-Submit
+#. Compile
+
+#. Print and bind
+
+#. Submit
