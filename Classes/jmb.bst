@@ -72,6 +72,7 @@ ENTRY
     series
     title
     type
+    url
     volume
     year
   }
@@ -1211,6 +1212,19 @@ FUNCTION {proceedings}
       format.publisher.address output
     }
   if$
+  format.note output
+  fin.entry
+}
+
+FUNCTION {software}
+{ output.bibitem
+  format.authors output
+  author format.key output
+  format.date "year" output.check
+  date.block
+  format.title output
+  new.sentence
+  howpublished "url" bibinfo.check output
   format.note output
   fin.entry
 }

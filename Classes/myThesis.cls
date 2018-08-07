@@ -48,7 +48,7 @@
 
 %% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[pdftex]{graphicx}
-
+\usepackage[toc,page]{appendix}
 
 \usepackage{fancyhdr}
 \usepackage{eucal}
@@ -71,6 +71,7 @@
 \usepackage{url}
 \renewcommand{\UrlFont}{\small\tt}
 \usepackage[nodayofweek]{datetime}
+
 \newdateformat{monthdate}{\monthname[\THEMONTH], \THEYEAR}
 \newdateformat{yeardate}{ \THEYEAR}
 
@@ -78,7 +79,8 @@
 
 %Bibliography
 %uncomment next line to change bibliography name to references for Book document class
-\renewcommand{\bibname}{References}
+\bibliographystyle{plainnat} % bibliography style
+\renewcommand{\bibname}{References} 
 % note that this doesn't do much if you later define another bibliography style 
 
 
@@ -123,6 +125,7 @@
                  citecolor = blue,
                  anchorcolor = green,
                  hyperindex = true,
+                 pdfpagelabels,
                  hyperfigures
                  ]{hyperref} 
 
@@ -144,6 +147,7 @@
                  citecolor = blue,
                  anchorcolor = green,
                  hyperindex = true,
+                 pdfpagelabels,
                  hyperfigures
                  ]{hyperref}
 
