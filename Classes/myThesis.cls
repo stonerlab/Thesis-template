@@ -66,7 +66,7 @@
 \usepackage{color}
 \usepackage{upgreek} %upright greek letters
 \usepackage{physics}
-\usepackage[square,comma,sort&compress]{natbib}
+\usepackage[square,comma,sort&compress,numbers]{natbib}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{url}
 \renewcommand{\UrlFont}{\small\tt}
@@ -79,7 +79,7 @@
 
 %Bibliography
 %uncomment next line to change bibliography name to references for Book document class
-\bibliographystyle{plainnat} % bibliography style
+\bibliographystyle{unsrtnat} % bibliography style
 \renewcommand{\bibname}{References} 
 % note that this doesn't do much if you later define another bibliography style 
 
