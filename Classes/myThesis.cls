@@ -279,7 +279,7 @@
   
 % END CUSTOM
 
-\newcommand{\submittedtext}{{Submitted in accordance with the requirements for transfer to the degree of}}
+\newcommand{\submittedtext}{{Submitted in accordance with the requirements for a research project for the degree of}}
 %
 %
 % DECLARATIONS
@@ -357,6 +357,8 @@
     {{\@university} \par}
 \vspace*{1ex}
     {{\@collegeordept} \par}
+\vspace*{0.5cm}
+	{\textit{ Supervisor: \supervisor} \par}
 \vspace*{20mm}
     {{\submittedtext} \par}
 \vspace*{1ex}
@@ -426,12 +428,10 @@
 {\pagestyle{plain}
 \begin{alwayssingle}
 \begin{center}
-\vspace*{1.5cm}
 {\Large \bfseries Declaration of Academic Integrity}
 \end{center}
-\vspace{0.5cm}
-\begin{quote}}
-{\end{quote}\end{alwayssingle}}
+\vspace{0.25cm}}
+{\end{alwayssingle}}
 
 % ACKNOWLEDGEMENTS
 %
