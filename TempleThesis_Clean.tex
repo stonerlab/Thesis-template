@@ -1,31 +1,31 @@
 \include{Macros/MacroFile1}
-
 \documentclass[oneside,11pt]{Classes/myThesis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% file path for figures - add extra chapters as necessary %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \graphicspath{{./Chapters/Chapter_1/Chapter_1_Fig/}     
-              {./Chapters/Chapter_2/Chapter_2_Fig/}
-              {./Chapters/Chapter_3/Chapter_3_Fig/}
-              {./ThesisFigs/}}
+	{./Chapters/Chapter_2/Chapter_2_Fig/}
+	{./Chapters/Chapter_3/Chapter_3_Fig/}
+	{./ThesisFigs/}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Constants - fill these in for use throughout the thesis %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\theAuthor}{Your Full name}
 \newcommand{\authorEmail}{physpqr@leeds.ac.uk}
-\newcommand{\myTitle}{My Thesis Title}
+\newcommand{\myTitle}{My Project  Title}
+\newcommand{\supervisor}{Prof. M.Y. Supervisor}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pdfinfo { /Title  (\myTitle)
-           /Creator (TeX)
-           /Producer (pdfTeX)
-           /Author (\theAuthor \authorEmail)
-           /ModDate (D:\pdfdate)
-           /CreationDate (D:\pdfdate)  %format D:YYYYMMDDhhmmss
-           /Subject (Condensed Matter Physics)
-           /Keywords (PhD, Thesis)}    
-		\pdfcatalog { /PageMode (/UseOutlines)
-                  /OpenAction (fitbh)  }
+	/Creator (TeX)
+	/Producer (pdfTeX)
+	/Author (\theAuthor \authorEmail)
+	/ModDate (D:\pdfdate)
+	/CreationDate (D:\pdfdate)  %format D:YYYYMMDDhhmmss
+	/Subject (Condensed Matter Physics)
+	/Keywords (MPhys, Report)}    
+\pdfcatalog { /PageMode (/UseOutlines)
+	/OpenAction (fitbh)  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Title Page Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,7 +42,7 @@
 \collegeordept{\href{http://physics.leeds.ac.uk}{School of Physics and Astronomy}}
 \university{\href{http://www.leeds.ac.uk}{University of Leeds}}
 
-\degree{Doctor of Philosophy}
+\degree{Combined Bachelor of Science and Master of Physics}
 \degreedate{\monthdate\today}
 
 %Different font in captions
@@ -64,48 +64,48 @@
 \linespread{1.3} %1.5 line spacing
 
 \begin{document}
-%\baselineskip=18pt plus1pt
-
-\maketitle
-%set the number of sectioning levels that get number and appear in the contents
-\setcounter{secnumdepth}{2}
-\setcounter{tocdepth}{2}
-\pagenumbering{roman}
-\frontmatter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%% Include sections are required, or comment out to skip over %%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{Dedication/dedication}
-\include{IPStatement/ipstatement}
-\include{Acknowledgement/acknowledgement}
-\include{Abstract/abstract}
-\newpage
-\tableofcontents
-\newpage
-\listoffigures
-\newpage
-\listoftables
-\newpage
-\include{Abbreviations/Abbreviations}
-%\include{Common_Symbols/Common_Symbols}
-
-\mainmatter
-
-\pagenumbering{arabic}
-\include{Chapters/Chapter_1/Chapter_1_File} %% file path for chapter tex files 
-%\include{Chapters/Chapter_2/Chapter_2_File}
-%\include{Chapters/Chapter_3/Chapter_3_File}
-%\include{Chapters/Chapter_4/Chapter_4_File}
-%\include{Chapters/Chapter_5/Chapter_5_File}
-%\include{Chapters/Chapter_6/Chapter_6_File}
-
-
-%\appendix
-\include{Appendix1/Appendix1}
-%\include{Appendix2/Appendix2}
-%. More appendicies here.
-\addcontentsline{toc}{chapter}{References} % Adds References to contents page
-\bibliographystyle{thesis} % bibliography style
-\renewcommand{\bibname}{References} 
-\bibliography{References/library} % References file
+	%\baselineskip=18pt plus1pt
+	
+	\maketitle
+	%set the number of sectioning levels that get number and appear in the contents
+	\setcounter{secnumdepth}{2}
+	\setcounter{tocdepth}{2}
+	\pagenumbering{roman}
+	\frontmatter
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%% Include sections are required, or comment out to skip over %%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%\include{Dedication/dedication}
+	\include{IPStatement/ipstatement}
+	\include{Acknowledgement/acknowledgement}
+	\include{Abstract/abstract}
+	\newpage
+	\tableofcontents
+	\newpage
+	\listoffigures
+	\newpage
+	\listoftables
+	\newpage
+	\include{Abbreviations/Abbreviations}
+	%\include{Common_Symbols/Common_Symbols}
+	
+	\mainmatter
+	
+	\pagenumbering{arabic}
+	\include{Chapters/Chapter_1/Chapter_1_File} %% file path for chapter tex files 
+	%\include{Chapters/Chapter_2/Chapter_2_File}
+	%\include{Chapters/Chapter_3/Chapter_3_File}
+	%\include{Chapters/Chapter_4/Chapter_4_File}
+	%\include{Chapters/Chapter_5/Chapter_5_File}
+	%\include{Chapters/Chapter_6/Chapter_6_File}
+	
+	
+	%\appendix
+	\include{Appendix1/Appendix1}
+	%\include{Appendix2/Appendix2}
+	%. More appendicies here.
+	\addcontentsline{toc}{chapter}{References} % Adds References to contents page
+	\bibliographystyle{ieeetr_me} % bibliography style
+	\renewcommand{\bibname}{References} 
+	\bibliography{References/library} % References file
 \end{document}

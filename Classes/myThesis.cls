@@ -24,9 +24,9 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions\relax
 \ifx\pdfoutput\undefined
-   \LoadClass[dvips, a4paper]{book}
+\LoadClass[dvips, a4paper]{book}
 \else
-   \LoadClass[pdftex, a4paper]{book}
+\LoadClass[pdftex, a4paper]{book}
 \fi
 
 %\usepackage[pagebackref=true]{hyperref} %define hyperref package last
@@ -57,7 +57,7 @@
 \usepackage[UKenglish]{babel}
 \usepackage[usenames, dvipsnames]{color}
 \usepackage[perpage]{footmisc}
-%\usepackage[square, sort, numbers, authoryear,sort&compress]{natbib}
+\usepackage[square, sort, numbers, sort&compress]{natbib}
 \usepackage{ifthen}
 \usepackage{ifpdf}
 \usepackage{subfigure}
@@ -66,7 +66,6 @@
 \usepackage{color}
 \usepackage{upgreek} %upright greek letters
 \usepackage{physics}
-\usepackage[square,comma,sort&compress]{natbib}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{url}
 \renewcommand{\UrlFont}{\small\tt}
@@ -109,48 +108,48 @@
 %--> http://www.uni-giessen.de/partosch/eurotex99/ oberdiek/print/sli4a4col.pdf
 %--> http://me.in-berlin.de/~miwie/tex-refs/html/latex-packages.html
 %-->
-    \usepackage[ pdftex, plainpages = false, pdfpagelabels, 
-                 pdfpagelayout = useoutlines,
-                 bookmarks,
-                 bookmarksopen = true,
-                 bookmarksnumbered = true,
-                 breaklinks = true,
-                 linktocpage,
-                 %pagebackref,
-                 colorlinks = true,
-                 linkcolor = blue,
-                 urlcolor  = blue,
-                 citecolor = blue,
-                 anchorcolor = green,
-                 hyperindex = true,
-                 hyperfigures
-                 ]{hyperref} 
+\usepackage[ pdftex, plainpages = false, pdfpagelabels, 
+pdfpagelayout = useoutlines,
+bookmarks,
+bookmarksopen = true,
+bookmarksnumbered = true,
+breaklinks = true,
+linktocpage,
+%pagebackref,
+colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = green,
+hyperindex = true,
+hyperfigures
+]{hyperref} 
 
-    \DeclareGraphicsExtensions{.png, .jpg, .pdf, .jpeg}
-    \usepackage[pdftex]{graphicx}
-    \pdfcompresslevel=9
-    \graphicspath{{ThesisFigs/PNG/}{ThesisFigs/PDF/}{ThesisFigs/}}
+\DeclareGraphicsExtensions{.png, .jpg, .pdf, .jpeg}
+\usepackage[pdftex]{graphicx}
+\pdfcompresslevel=9
+\graphicspath{{ThesisFigs/PNG/}{ThesisFigs/PDF/}{ThesisFigs/}}
 \else
-    \usepackage[ dvips, 
-                 bookmarks,
-                 bookmarksopen = true,
-                 bookmarksnumbered = true,
-                 breaklinks = true,
-                 linktocpage,
-                 %pagebackref,
-                 colorlinks = true,
-                 linkcolor = blue,
-                 urlcolor  = blue,
-                 citecolor = blue,
-                 anchorcolor = green,
-                 hyperindex = true,
-                 hyperfigures
-                 ]{hyperref}
+\usepackage[ dvips, 
+bookmarks,
+bookmarksopen = true,
+bookmarksnumbered = true,
+breaklinks = true,
+linktocpage,
+%pagebackref,
+colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = green,
+hyperindex = true,
+hyperfigures
+]{hyperref}
 
-    \DeclareGraphicsExtensions{.eps, .ps}
-    \usepackage{epsfig}
-    \usepackage{graphicx}
-    \graphicspath{{ThesisFigs/EPS/}{ThesisFigs/}}
+\DeclareGraphicsExtensions{.eps, .ps}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\graphicspath{{ThesisFigs/EPS/}{ThesisFigs/}}
 \fi
 
 %define the page size including an offset for binding
@@ -163,11 +162,11 @@
 
 %A4 settings
 \ifpdf
-   \pdfpageheight=350mm
-   \pdfpagewidth=260mm
+\pdfpageheight=350mm
+\pdfpagewidth=260mm
 \else
-   \setlength{\paperheight}{350mm}
-   \setlength{\paperwidth}{260mm}
+\setlength{\paperheight}{350mm}
+\setlength{\paperwidth}{260mm}
 \fi
 
 %\ifpdf
@@ -219,8 +218,8 @@
 \renewcommand{\footrulewidth}{0pt}
 \addtolength{\headheight}{0.5pt}
 \fancypagestyle{plain}{
-  \fancyhead{}
-  \renewcommand{\headrulewidth}{0pt}
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
 }
 
 % START CUSTOM
@@ -228,17 +227,17 @@
 %	CONTENTS HEADER
 
 \renewcommand{\@makeschapterhead}[1]{%
-  \vspace*{50\p@}%
-  {\parindent \z@ \raggedright \reset@font
-%    \hrule                                        % horizontal line
-    \vspace{5pt}%                                 % add vertical space
-    \interlinepenalty\@M
-    \Huge \scshape #1\par                         % chapter title
-    \vspace{5pt}%                                 % add vertical space
-%    \hrule                                        % horizontal line
-    \nobreak
-    \vskip 40\p@
-  }}
+	\vspace*{50\p@}%
+	{\parindent \z@ \raggedright \reset@font
+		%    \hrule                                        % horizontal line
+		\vspace{5pt}%                                 % add vertical space
+		\interlinepenalty\@M
+		\Huge \scshape #1\par                         % chapter title
+		\vspace{5pt}%                                 % add vertical space
+		%    \hrule                                        % horizontal line
+		\nobreak
+		\vskip 40\p@
+}}
 %  
 %	CHAPTER HEADER
 %\newcommand{\gargantuan}{\fontsize{45}{50}\selectfont}
@@ -267,19 +266,19 @@
 %    \newpage
 %  }}
 \renewcommand{\@makechapterhead}[1]{%
-\begin{center}
-{\huge
-    \ifnum \c@secnumdepth >\m@ne
-        \@chapapp\space \thechapter} % Chapter number
-    \fi
-{\huge : #1\par}
-\vskip 0.5em
-\end{center}
+	\begin{center}
+		{\huge
+			\ifnum \c@secnumdepth >\m@ne
+			\@chapapp\space \thechapter} % Chapter number
+		\fi
+		{\huge : #1\par}
+		\vskip 0.5em
+	\end{center}
 }
-  
+
 % END CUSTOM
 
-\newcommand{\submittedtext}{{Submitted in accordance with the requirements for transfer to the degree of}}
+\newcommand{\submittedtext}{{Submitted in accordance with the requirements for a research project for the degree of}}
 %
 %
 % DECLARATIONS
@@ -307,9 +306,9 @@
 % single column even in a double-column document.
 
 \newenvironment{alwayssingle}{%
-       \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
-       \else\newpage\fi}
-       {\if@restonecol\twocolumn\else\newpage\fi}
+	\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+	\else\newpage\fi}
+{\if@restonecol\twocolumn\else\newpage\fi}
 
 %%define title page layout
 %\renewcommand{\maketitle}{%
@@ -338,33 +337,35 @@
 
 %CUSTOM title page layout
 \renewcommand{\maketitle}{%
-\begin{alwayssingle}
-    \renewcommand{\footnotesize}{\small}
-    \renewcommand{\footnoterule}{\relax}
-    \thispagestyle{empty}
-%  \null\vfill
-\begin{picture}({50,25})
-\put(-75,75){\hbox{\@deptlogo}}
-\end{picture}
-\begin{picture}({50,25})
-\put(210,75){\hbox{\@logo}}
-\end{picture}
-  \begin{center}
-    { \Huge {\bfseries {\@title}} \par}
-{\large \vspace*{20mm} {{\@crest} \par} \vspace*{20mm}}
-    {{\Large \@author} \par}
-{\large \vspace*{1ex}
-    {{\@university} \par}
-\vspace*{1ex}
-    {{\@collegeordept} \par}
-\vspace*{20mm}
-    {{\submittedtext} \par}
-\vspace*{1ex}
-    {\it {\@degree} \par}
-\vspace*{2ex}
-    {\@degreedate}}
-  \end{center}
-  \null\vfill
+	\begin{alwayssingle}
+		\renewcommand{\footnotesize}{\small}
+		\renewcommand{\footnoterule}{\relax}
+		\thispagestyle{empty}
+		%  \null\vfill
+		\begin{picture}({50,25})
+		\put(-75,75){\hbox{\@deptlogo}}
+		\end{picture}
+		\begin{picture}({50,25})
+		\put(210,75){\hbox{\@logo}}
+		\end{picture}
+		\begin{center}
+			{ \Huge {\bfseries {\@title}} \par}
+			{\large \vspace*{20mm} {{\@crest} \par} \vspace*{20mm}}
+			{{\Large \@author} \par}
+			{\large \vspace*{1ex}
+				{{\@university} \par}
+				\vspace*{1ex}
+				{{\@collegeordept} \par}
+				\vspace*{0.5cm}
+				{\textit{ Supervisor: \supervisor} \par}
+				\vspace*{20mm}
+				{{\submittedtext} \par}
+				\vspace*{1ex}
+				{\it {\@degree} \par}
+				\vspace*{2ex}
+				{\@degreedate}}
+		\end{center}
+		\null\vfill
 \end{alwayssingle}}
 
 % DEDICATION
@@ -374,14 +375,14 @@
 
 \newenvironment{dedication}
 {\begin{alwayssingle}
-  \pagestyle{plain}
-  \begin{center}
-  \vspace*{1.5cm}
-  {\LARGE }
-  \end{center}
-  \vspace{0.5cm}
-  \begin{quote} \begin{center}}
-{\end{center} \end{quote} \end{alwayssingle}}
+		\pagestyle{plain}
+		\begin{center}
+			\vspace*{1.5cm}
+			{\LARGE }
+		\end{center}
+		\vspace{0.5cm}
+		\begin{quote} \begin{center}}
+			{\end{center} \end{quote} \end{alwayssingle}}
 
 % Abbreviations
 %
@@ -389,15 +390,15 @@
 
 \newenvironment{abbreviations}
 {
-\pagestyle{plain}
-\begin{alwayssingle}
-\begin{center}
-\vspace*{1.5cm}
-{\Large \bfseries Abbreviations}
-\end{center}
-\vspace{0.7cm}
-\begin{quote}}
-{\end{quote}\end{alwayssingle}}
+	\pagestyle{plain}
+	\begin{alwayssingle}
+		\begin{center}
+			\vspace*{1.5cm}
+			{\Large \bfseries Abbreviations}
+		\end{center}
+		\vspace{0.7cm}
+		\begin{quote}}
+		{\end{quote}\end{alwayssingle}}
 
 % Abbreviations
 %
@@ -405,15 +406,15 @@
 
 \newenvironment{Common_Symbols}
 {
-\pagestyle{plain}
-\begin{alwayssingle}
-\begin{center}
-\vspace*{1.5cm}
-{\Large \bfseries Common Symbols}
-\end{center}
-\vspace{0.7cm}
-\begin{quote}}
-{\end{quote}\end{alwayssingle}}
+	\pagestyle{plain}
+	\begin{alwayssingle}
+		\begin{center}
+			\vspace*{1.5cm}
+			{\Large \bfseries Common Symbols}
+		\end{center}
+		\vspace{0.7cm}
+		\begin{quote}}
+		{\end{quote}\end{alwayssingle}}
 
 % IPSTATEMENT
 %
@@ -424,14 +425,12 @@
 
 \newenvironment{ipstatement}
 {\pagestyle{plain}
-\begin{alwayssingle}
-\begin{center}
-\vspace*{1.5cm}
-{\Large \bfseries Declaration of Academic Integrity}
-\end{center}
-\vspace{0.5cm}
-\begin{quote}}
-{\end{quote}\end{alwayssingle}}
+	\begin{alwayssingle}
+		\begin{center}
+			{\Large \bfseries Declaration of Academic Integrity}
+		\end{center}
+		\vspace{0.25cm}}
+	{\end{alwayssingle}}
 
 % ACKNOWLEDGEMENTS
 %
@@ -442,14 +441,14 @@
 
 \newenvironment{acknowledgements}
 {\pagestyle{plain}
-\begin{alwayssingle}
-\begin{center}
-\vspace*{-2.0cm}
-{\Large \bfseries Acknowledgements}
-\end{center}
-\vspace{0.5cm}
-\begin{quote}}
-{\end{quote}\end{alwayssingle}}
+	\begin{alwayssingle}
+		\begin{center}
+			\vspace*{-2.0cm}
+			{\Large \bfseries Acknowledgements}
+		\end{center}
+		\vspace{0.5cm}
+		\begin{quote}}
+		{\end{quote}\end{alwayssingle}}
 
 % The acknowledgementslong environment puts a large, bold, centered 
 % "Acknowledgements" label at the top of the page. The acknowledgement itself 
@@ -457,13 +456,13 @@
 
 \newenvironment{acknowledgementslong}
 {\pagestyle{plain}
-\begin{alwayssingle}
-\begin{center}
-\vspace*{1.5cm}
-{\Large \bfseries Acknowledgements}
-\end{center}
-\vspace{0.5cm}\begin{quote}}
-{\end{quote}\end{alwayssingle}}
+	\begin{alwayssingle}
+		\begin{center}
+			\vspace*{1.5cm}
+			{\Large \bfseries Acknowledgements}
+		\end{center}
+		\vspace{0.5cm}\begin{quote}}
+		{\end{quote}\end{alwayssingle}}
 
 %ABSTRACT
 %
@@ -472,45 +471,45 @@
 %i.e. tabbed in at both sides, and on its own page.
 
 \newenvironment{abstracts} {\begin{alwayssingle} \pagestyle{plain}
-  \begin{center}
-%  \vspace*{1.5cm}
-\vspace*{-2.0cm}
-  {\Large \bfseries  Abstract}
-  \end{center}
-  \vspace{0.5cm}
-   \begin{quote}}
-{\end{quote}\end{alwayssingle}}
+		\begin{center}
+			%  \vspace*{1.5cm}
+			\vspace*{-2.0cm}
+			{\Large \bfseries  Abstract}
+		\end{center}
+		\vspace{0.5cm}
+		\begin{quote}}
+		{\end{quote}\end{alwayssingle}}
 
 %The abstractlong environment puts a large, bold, centered "Abstract" label at
 %the top of the page. The abstract itself does not appears in a quote
 %environment so you can get more in.
 
 \newenvironment{abstractslong} {\begin{alwayssingle} \pagestyle{empty}
-  \begin{center}
-  \vspace*{1.5cm}
-  {\Large \bfseries  Abstract}
-  \end{center}
-  \vspace{0.5cm} \begin{quote}}
-{\end{quote}\end{alwayssingle}}
+		\begin{center}
+			\vspace*{1.5cm}
+			{\Large \bfseries  Abstract}
+		\end{center}
+		\vspace{0.5cm} \begin{quote}}
+		{\end{quote}\end{alwayssingle}}
 
 %The abstractseparate environment is for running of a page with the abstract
 %on including title and author etc as required to be handed in separately
 
 \newenvironment{abstractseparate} {\begin{alwayssingle} \pagestyle{empty}
-  \vspace*{-1in}
- \begin{center}
-    { \Large {\bfseries {\@title}} \par}
-    {{\large \vspace*{1ex} \@author} \par}
-{\large \vspace*{1ex}
-    {{\@collegeordept} \par}
-    {{\@university} \par}
-\vspace*{1ex}
-    {{\it \submittedtext} \par}
-    {\it {\@degree} \par}
-\vspace*{2ex}
-    {\@degreedate}}
-  \end{center}}
-{\end{alwayssingle}}
+		\vspace*{-1in}
+		\begin{center}
+			{ \Large {\bfseries {\@title}} \par}
+			{{\large \vspace*{1ex} \@author} \par}
+			{\large \vspace*{1ex}
+				{{\@collegeordept} \par}
+				{{\@university} \par}
+				\vspace*{1ex}
+				{{\it \submittedtext} \par}
+				{\it {\@degree} \par}
+				\vspace*{2ex}
+				{\@degreedate}}
+	\end{center}}
+	{\end{alwayssingle}}
 
 %ROMANPAGES
 %
@@ -520,9 +519,8 @@
 
 \newenvironment{romanpages}
 {\setcounter{page}{1}
-  \renewcommand{\thepage}{\roman{page}}}
+	\renewcommand{\thepage}{\roman{page}}}
 {\newpage\renewcommand{\thepage}{\arabic{page}}\setcounter{page}{1}}
 
 \hbadness=10000  %when to report badness errors
 \hfuzz=50pt  %when to report overfull error
-
