@@ -57,7 +57,7 @@
 \usepackage[UKenglish]{babel}
 \usepackage[usenames, dvipsnames]{color}
 \usepackage[perpage]{footmisc}
-%\usepackage[square, sort, numbers, authoryear,sort&compress]{natbib}
+\usepackage[square, sort, numbers, sort&compress]{natbib}
 \usepackage{ifthen}
 \usepackage{ifpdf}
 \usepackage{subfigure}
@@ -66,7 +66,6 @@
 \usepackage{color}
 \usepackage{upgreek} %upright greek letters
 \usepackage{physics}
-\usepackage[square,comma,sort&compress]{natbib}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{url}
 \renewcommand{\UrlFont}{\small\tt}
