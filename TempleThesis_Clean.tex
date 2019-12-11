@@ -1,6 +1,26 @@
 \include{Macros/MacroFile1}
 \documentclass[oneside,11pt]{Classes/myThesis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Instructions %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fill in the details about your name, and project title
+%% in the sections just below here. Then you write each
+%% Chapter in a separate LaTeX file - you will find Chapter 1
+%% is already setup for you.
+%%
+%% The folder structure is:
+%% Chapters
+%%     |-----------> Chapter_1
+%%     |                  |----------> Chapter_1_Fig
+%%     |                  |               |-> My_fig.eps
+%%     |                  |----------> Chapter_1_file.tex
+%%     !-----------> Chapter_2
+%%     |                  |----------> Chapter_2_Fig
+%%     |                  |               |-> My_other_fig.eps
+%%     |                  |----------> Chapter_2_file.tex
+%%
+%% Chapter_1 contains an exa,ple of includinga figure in the text with a reference.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% file path for figures - add extra chapters as necessary %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \graphicspath{{./Chapters/Chapter_1/Chapter_1_Fig/}     
@@ -93,7 +113,7 @@
 
 \pagenumbering{arabic}
 \include{Chapters/Chapter_1/Chapter_1_File} %% file path for chapter tex files 
-%\include{Chapters/Chapter_2/Chapter_2_File}
+\include{Chapters/Chapter_2/Chapter_2_File}
 %\include{Chapters/Chapter_3/Chapter_3_File}
 %\include{Chapters/Chapter_4/Chapter_4_File}
 %\include{Chapters/Chapter_5/Chapter_5_File}
@@ -105,7 +125,7 @@
 %\include{Appendix2/Appendix2}
 %. More appendicies here.
 \addcontentsline{toc}{chapter}{References} % Adds References to contents page
-\bibliographystyle{thesis} % bibliography style
+\bibliographystyle{ieeetr_me} % bibliography style
 \renewcommand{\bibname}{References} 
 \bibliography{References/library} % References file
 \end{document}
