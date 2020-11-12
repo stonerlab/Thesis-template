@@ -278,7 +278,7 @@ hyperfigures
 
 % END CUSTOM
 
-\newcommand{\submittedtext}{{Submitted in accordance with the requirements for a research project for the degree of}}
+\newcommand{\submittedtext}{{Submitted in accordance with the requirements for a research project\\ for the degree of}}
 %
 %
 % DECLARATIONS
